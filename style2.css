@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+body{
+	line-height: 1.5;
+	font-family: 'Poppins', sans-serif;
+}
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+.toutclient{
+	display: flex;
+	width: 100%;
+	padding-top: 30px;
+	padding-left: 40px;
+	padding-bottom: 30px;
+}
+.montexte{
+	width: 30%;
+	color: whitesmoke;
+	margin-top: 110px;
+	text-align: justify;
+	
+}
+.espaceclient{
+	
+    max-width: 850px;
+    width: 90%;
+	height: 80vh;
+    background: #fff;
+    padding: 40px 30px;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    perspective: 2700px;
+    margin: 0px 0px 0px 40px;
+	
+}
+.client h1{
+	color: white;
+    text-shadow: 0.5px 0.5px 1px #000;
+	text-align: center;
+	padding-top: 20px;
+}
+.client h1{
+	font-size: 35px;
+}
+.client .line{
+	text-align: center;
+	margin-left: 590px;
+}
+
+.espaceclient  .cover{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    z-index: 98;
+    transition: all 1s ease;
+    transform-origin: left;
+    transform-style: preserve-3d;
+   
+}
+
+
+
+.espaceclient  .cover::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+    z-index: 100;
+}
+
+.espaceclient #flip:checked ~ .cover{
+    transform: rotateY(-180deg);
+}
+
+.espaceclient  .cover img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 12;
+}
+
+.espaceclient  .cover .back .backimg{
+    transform: rotateY(180deg);
+}
+
+.espaceclient .form{
+    height: 100%;
+    width: 100%;
+    background: #fff;
+}
+
+.espaceclient .form-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-content .login-form,
+.form-content .signup-form{
+    width: calc(100% / 2 - 25px);
+    /*background: red;*/
+}
+
+form .form-content .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+
+form .form-content .input-boxes{
+    margin-top: 30px;
+}
+
+form .form-content .title:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 25px;
+    background: darkgoldenrod;
+}
+
+form .signup-form .title:before{
+    width: 20px;
+
+}
+form .form-content .input-boxes{
+    margin-top: 30px;
+}
+
+form .form-content .input-box{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+    position: relative;
+}
+
+.form-content .input-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2);
+    transition: all 0.03s ease;
+}
+
+.form-content .input-box input:focus,
+.form-content .input-box input:valid{
+    border-color: darkgoldenrod;
+}
+
+.form-content .input-box i{
+    position: absolute;
+    color: darkgoldenrod;
+    font-size: 17px;
+}
+
+form .form-content .button{
+    color: #fff;
+    margin-top: 40px;
+}
+
+form .form-content .text{
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+form .form-content .text a{
+    text-decoration: none;
+}
+
+form .form-content .text a:hover{
+    text-decoration: underline;
+}
+
+form .form-content .button input{
+    color: #fff;
+    background: darkgoldenrod;
+    border: none;
+    border-radius: 6px;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+form .form-content .button input:hover{
+    background: goldenrod;
+}
+
+form .form-content label{
+    color: darkgoldenrod;
+    cursor: pointer;
+}
+form .form-content label:hover{
+    text-decoration: underline;
+}
+.container #flip{
+    display: none;
+}
+/* travail d'emeraude footer */
+.container{
+	max-width: 1170px;
+	margin:auto;
+}
+.row{
+	display: flex;
+	flex-wrap: wrap;
+}
+ul{
+	list-style: none;
+}
+footer{
+	margin-top: 50px;
+}
+.footer{
+	background-color: black;
+    padding: 70px 0;
+}
+.footer-col{
+   width: 25%;
+   padding: 0 15px;
+}
+.footer-col h4{
+	font-size: 18px;
+	color: #ffffff;
+	text-transform: capitalize;
+	margin-bottom: 35px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h4::before{
+	content: '';
+	position: absolute;
+	left:0;
+	bottom: -10px;
+	background-color: darkgoldenrod;
+	height: 2px;
+	box-sizing: border-box;
+	width: 50px;
+}
+.footer-col ul li:not(:last-child){
+	margin-bottom: 10px;
+}
+.footer-col ul li a{
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 300;
+	color: #bbbbbb;
+	display: block;
+	transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+	color: #ffffff;
+	padding-left: 8px;
+}
+.footer-col .social-links a{
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255,255,255,0.2);
+	margin:0 10px 10px 0;
+	text-align: center;
+	line-height: 40px;
+	border-radius: 50%;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.footer-col .social-links a:hover{
+	color: #24262b;
+	background-color: #ffffff;
+}
+
+/* responsive
+@media(max-width: 767px){
+  .footer-col{
+    width: 50%;
+    margin-bottom: 30px;
+}
+}
+@media(max-width: 574px){
+  .footer-col{
+    width: 100%;
+}
+} */
+
+.copyright{
+	color: white;
+}
+
+.copy{
+	display: flex;
+	justify-content: center;
+	padding-top: 90px;
+}
+
+#avis{
+	background-color: white;
+}
+
+.avis-container{
+	display: flex;
+
+}
+blockquote{
+	text-align: justify;
+	padding: 20px;
+	padding-top: 30px;
+
+	
+}
+
+
+
+.avis-1{
+	width: 400px;
+	height: 250px;
+	background-color: rgba(184, 135, 11, 0.877);
+	text-align: center;
+	border: 2px solid darkgoldenrod;
+	border-radius: 15px;
+	box-shadow: 5px 8px 12px black;
+	margin-top: -50px;
+	margin-left: 200px;
+	background-color: black;
+	border-style: none;
+}
+.avis-2{
+	flex-basis: 50%;
+	width: 400px;
+	height: 250px;
+	background-color: rgba(184, 135, 11, 0.877);
+	text-align: center;
+	border: 2px solid darkgoldenrod;
+	border-radius: 15px;
+	box-shadow: 5px 8px 12px black;
+	margin-top: 50px;
+	margin-left: 200px;
+	background-color: black;
+	border-style: none;
+}
+.avis-3{
+	flex-basis: 50%;
+	width: 400px;
+	height: 250px;
+	background-color: rgba(184, 135, 11, 0.877);
+	text-align: center;
+	border: 2px solid darkgoldenrod;
+	border-radius: 15px;
+	box-shadow: 5px 8px 12px black;
+	margin-left: 20px;
+	margin-top: 50px;
+	background-color: black;
+	border-style: none;
+}
+.avis-4{
+	flex-basis: 50%;
+	width: 400px;
+	height: 250px;
+	background-color: rgba(184, 135, 11, 0.877);
+	background-color: black;
+	text-align: center;
+	border: 2px solid darkgoldenrod;
+	border-style: none;
+	border-radius: 15px;
+	box-shadow: 5px 8px 12px black;
+	margin-top: 50px;
+	margin-left:20px;
+}
+.avis h1{
+	color: darkgoldenrod;
+    font-size: 30px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+	text-align: center;
+}
+
+.bloc1{
+	margin: 100px;
+}
+.block2{
+	margin: 100px;
+}
+
+.span{
+	margin-top: 20px;
+	color: white;
+	font-weight: 700;
+}
+.client{
+	color: white;
+}
+.client2{
+	position: absolute;
+	margin-top: 650px;
+	margin-left: 590px;
+}

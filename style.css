@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Sans-Serif;
+    
+}
+body{
+    background-image: url('img/home-background.png');
+    background-position: top;
+    background-size: cover;
+    background-repeat: none;
+    background-attachment: fixed;
+}
+
+/* .container-one{
+
+    height: 90vh;
+   
+} */
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    padding: 30px;
+    width: 100vw;
+    margin: auto;
+    position:sticky;
+    top:0;
+    left:0;
+    transition: 0.6s;
+    z-index: 100;
+    padding-left: 7rem;
+    padding-right: 7rem;
+} 
+
+
+
+.logo img{
+    height: 80px;
+}
+
+
+
+header ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 20px;
+    padding: 4px;
+    /* transition: all ease .5s; */
+    border-style: none;
+    border-color:  #b8860b;
+    
+}
+
+header ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    /* transition: all ease .5s; */
+    font-weight: 700;
+}
+header ul li:hover{
+   
+    border-bottom: solid 1px #b8860b;
+   
+}
+header ul li a:hover{
+    color:  #b8860b ;
+}
+
+header.sticky{
+    padding-top: 8px;
+    padding-bottom:8px;
+    box-shadow: 0px 3px 3px #aaaaaa;
+    width: 100vw;
+    background-color: #ffffff;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+header.sticky ul li{
+    padding-bottom: 7px;
+}
+
+header.sticky ul li a{
+    color:  #b8860b;
+    font-weight: 700;
+}
+img.sticky{
+    height: 40px;
+}
+header.sticky ul li a:hover{
+    color: #000000;
+}
+
+
+/*--------------------------------------------------- ACCUEIL --------------------------------------------------*/
+
+.accueil{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 20px;
+    height: 80vh;
+    background-color: #00000042;  
+}
+.accueil h1{
+    color: white;
+    font-size: 50px;
+    text-shadow: 0.5px 0.5px 1px #000;
+}
+.accueil h1 strong{
+    color: #b8860b;
+}
+.accueil  div{
+    color: white;
+    font-size: 18px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+.accueil a {
+    color: white;
+    text-decoration: none;
+    background-color: #b8860b;
+    font-weight: bold;
+    padding: 15px;
+    transition: all ease 1s;
+    box-shadow: 1px 11px 10px #000;
+    border-radius: 10px;
+    
+}
+
+.accueil a:hover{
+    background-color: #ffffff;
+    color: #b8860b;
+}
+
+
+/* -------------------------sub home-------------------------------- */
+
+.sub-home{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 0 0;
+    width: 100vw;
+    background-color: white;
+    background-attachment: fixed;
+    row-gap: 5px;
+    
+}
+.sub-home h1{
+    font-size: 31px;
+    color: #b8860b;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.sub-home  .message-daccroche{
+    width: 100%;
+    padding: 4rem 5rem 2rem 5rem;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+
+}
+
+.message-daccroche .detail{
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    transition: all ease .5s;
+    box-shadow: 5px 5px 10px #ccc;
+    cursor: pointer;
+}
+
+.message-daccroche .detail:hover{
+    background-color: #b8860b;
+    color: white; 
+}
+
+.message-daccroche .detail h3{
+    transition: all ease .1s;
+}
+
+.message-daccroche .detail:hover i, .message-daccroche .detail:hover a{
+    color: white;
+}
+
+.message-daccroche .detail a, .gold{
+    color: #b8860b;
+}
+
+.message-daccroche .detail i{
+    font-size: 50px;
+    color: #b8860b;
+}
+.atouts{
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 5rem 4rem 5rem;
+    width: 100%;
+}
+.atouts img{
+    height: 23rem;
+    border-radius: 20px;
+}
+
+.atouts span{
+    color: white;
+}
+/*------------------------------- about ------------------------------*/
+
+
+.about{
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000058;
+    background-attachment: fixed; 
+    padding-bottom: 30px;  
+}
+.about h1{
+    color: white;
+    font-size: 30px;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.line{
+    background-color: #b8860b;
+    height: 3px;
+    width: 10rem;
+}
+.about img{
+    height: 300px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #000000;
+}
+
+.about .sous-container-about{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    padding: 0 5rem 0 5rem;
+    justify-content: center;
+    align-items: center;
+    column-gap: 5rem;
+    margin-top: 4rem;
+}
+
+
+.sous-container-about div,.sous-container-about img{
+    width: 50%;
+}
+
+.about-text{
+    color: white;
+    font-size: 16px;
+    text-shadow: 0.5px 0.5px 1px #000;
+   text-align: justify;
+    height: 300px;
+    /* border-radius: 20px;  
+    padding: 7px; */
+    
+}
+
+
+
+/*---------------------------------------- services ---------------------------------------*/
+
+.services-section{
+    padding: 5rem ;
+    display: flex;
+    flex-direction: column;
+    background-image: url(img/service-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    
+    justify-content: center;
+    align-items: center;
+}
+
+
+.services-section h1{
+    color:white;
+    font-size: 35px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.services{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+    margin-top: 3rem;
+    justify-content: center;
+    align-items: start;
+
+}
+.service{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+    border: solid 2px #b8860b;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.071);
+    cursor: pointer;
+
+}
+.service img{
+    height: 200px;
+    border-radius: 100px;
+    border: solid 2px #b8860b;
+
+}
+.service h3{
+    color: white;
+    
+}
+
+/*------------------------------------ contact ----------------------------------*/
+
+.contact{
+    position:relative;
+    min-height:100vh;
+    padding: 50px 100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(img/contact-img.png);
+}
+.contact .contact-content{
+    max-width:800px;
+    text-align: center;
+    
+}
+
+.contact .contact-content h2 {
+    font-size:36px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+.contact .contact-content p{
+    font-weight: 300;
+    color: white;
+    
+}
+.contact-container{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:30px;
+    
+}
+
+.contact-container .contactInfo{
+    width:50%;
+    display:flex;
+    flex-direction: column;
+}
+
+.contact-container .contactInfo .contact-box{
+    
+    padding:20px 0;
+    display:flex;
+}
+
+.contact-container .contactInfo .contact-box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #b8860b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius:50%;
+    font-size: 22px;
+    color:#fff;
+    
+}
+
+.contact-container .contactInfo .contact-box .contact-text{
+    display:flex;
+    flex-direction: column;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 300;
+    
+}
+.contact-container .contactInfo .contact-box .contact-text h3{
+    font-weight: 500;
+    color: white;
+}
+.contact-container .contactInfo .contact-box .contact-text p a{
+    text-decoration: none!important;
+    color:#fff;
+}
+.contactForm{
+    width:40%;
+    padding:40px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.contactForm h2{
+    font-size: 30px;
+    color:#333;
+    font-weight: 500;
+}
+.contactForm .inputBox,
+.modal .inputBox{
+    position:relative;
+    width:100%;
+    margin-top:10px;
+    
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea,
+.modal .inputBox input,
+.modal .inputBox textarea{
+    width:100%;
+    padding:5px 0;
+    font-size: 16px;
+    margin:10px 0;
+    border:none;
+    border-bottom: 2px solid #333;
+    outline:none;
+    resize:none;
+}
+
+.contactForm .inputBox span,
+.modal .inputBox span{
+    position: absolute;
+    left:0;
+    padding:5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition:0.5s;
+    color:#666;
+    
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:valid ~ span,
+
+.modal .inputBox input:focus ~ span,
+.modal .inputBox textarea:focus ~ span,
+.modal .inputBox input:valid ~ span,
+.modal .inputBox textarea:valid ~ span
+{
+    color:#b8860b;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactForm .inputBox input[type="submit"],
+.modal .inputBox input[type="submit"]{
+    width:100px;
+    background:  #b8860b;
+    color:#fff;
+    border:none;
+    cursor:pointer;
+    font-size: 18px;
+    transition: 0.5s;
+}
+.contactForm .inputBox input[type="submit"]:hover,
+.modal .inputBox input[type="submit"]:hover{
+    background:#b8870bd7;
+}
+
+.service span{
+    color: white;
+    text-align: center;
+}
+
+/* Responsivité */
